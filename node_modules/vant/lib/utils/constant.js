@@ -1,0 +1,22 @@
+"use strict";
+
+exports.__esModule = true;
+exports.HAPTICS_FEEDBACK = exports.FORM_KEY = exports.BORDER_UNSET_TOP_BOTTOM = exports.BORDER_TOP_BOTTOM = exports.BORDER_TOP = exports.BORDER_SURROUND = exports.BORDER_LEFT = exports.BORDER_BOTTOM = exports.BORDER = void 0;
+var BORDER = 'van-hairline';
+exports.BORDER = BORDER;
+var BORDER_TOP = BORDER + "--top";
+exports.BORDER_TOP = BORDER_TOP;
+var BORDER_LEFT = BORDER + "--left";
+exports.BORDER_LEFT = BORDER_LEFT;
+var BORDER_BOTTOM = BORDER + "--bottom";
+exports.BORDER_BOTTOM = BORDER_BOTTOM;
+var BORDER_SURROUND = BORDER + "--surround";
+exports.BORDER_SURROUND = BORDER_SURROUND;
+var BORDER_TOP_BOTTOM = BORDER + "--top-bottom";
+exports.BORDER_TOP_BOTTOM = BORDER_TOP_BOTTOM;
+var BORDER_UNSET_TOP_BOTTOM = BORDER + "-unset--top-bottom";
+exports.BORDER_UNSET_TOP_BOTTOM = BORDER_UNSET_TOP_BOTTOM;
+var HAPTICS_FEEDBACK = 'van-haptics-feedback';
+exports.HAPTICS_FEEDBACK = HAPTICS_FEEDBACK;
+var FORM_KEY = Symbol('van-form');
+exports.FORM_KEY = FORM_KEY;

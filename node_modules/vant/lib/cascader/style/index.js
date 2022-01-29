@@ -1,0 +1,19 @@
+"use strict";
+
+require('../../style/base.css');
+
+require('../../badge/index.css');
+
+require('../../icon/index.css');
+
+require('../../sticky/index.css');
+
+require('../../swipe/index.css');
+
+require('../../swipe-item/index.css');
+
+require('../../tabs/index.css');
+
+require('../../tab/index.css');
+
+require('../index.css');

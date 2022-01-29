@@ -1,0 +1,77 @@
+"use strict";
+
+exports.__esModule = true;
+exports.default = void 0;
+var _default = {
+  name: 'Nume',
+  tel: 'Telefon',
+  save: 'Salvează',
+  confirm: 'Confirmă',
+  cancel: 'Anulează',
+  delete: 'Șterge',
+  loading: 'Încărcare...',
+  noCoupon: 'Fără cupoane',
+  nameEmpty: 'Te rugăm să completezi numele',
+  telInvalid: 'Număr de telefon invalid',
+  vanCalendar: {
+    end: 'Sfârșit',
+    start: 'Început',
+    title: 'Calendar',
+    startEnd: 'Început/Sfârsit',
+    weekdays: ['Dum', 'Lun', 'Mar', 'Mie', 'Joi', 'Vin', 'Sâm'],
+    monthTitle: (year, month) => year + "/" + month,
+    rangePrompt: maxRange => "Alege maxim " + maxRange + " zile"
+  },
+  vanCascader: {
+    select: 'Selectați'
+  },
+  vanContactCard: {
+    addText: 'Adaugă informațiile de contact'
+  },
+  vanContactList: {
+    addText: 'Adaugă contact nou'
+  },
+  vanPagination: {
+    prev: 'Precedenta',
+    next: 'Urmatoarea'
+  },
+  vanPullRefresh: {
+    pulling: 'Trage pentru a da împrospăta...',
+    loosing: 'Eliberează pentru a împrospăta...'
+  },
+  vanSubmitBar: {
+    label: 'Total：'
+  },
+  vanCoupon: {
+    unlimited: 'Nelimitat',
+    discount: discount => discount * 10 + "% discount",
+    condition: condition => "Cel pu\u021Bin " + condition
+  },
+  vanCouponCell: {
+    title: 'Cupon',
+    count: count => "Ai " + count + " cupoane"
+  },
+  vanCouponList: {
+    exchange: 'Schimbă',
+    close: 'Închide',
+    enable: 'Disponibil',
+    disabled: 'Indisponibil',
+    placeholder: 'Cod cupon'
+  },
+  vanAddressEdit: {
+    area: 'Zonă',
+    postal: 'Cod postal',
+    areaEmpty: 'Te rugăm sa selectezi o zona de primire',
+    addressEmpty: 'Adresa nu poate fi goală',
+    postalEmpty: 'Cod postal invalid',
+    defaultAddress: 'Setează ca adresă de pornire'
+  },
+  vanAddressEditDetail: {
+    label: 'Adresă',
+    placeholder: 'Adresă'
+  },
+  vanAddressList: {
+    add: 'Adaugă adresă nouă'
+  }
+};
+exports.default = _default;

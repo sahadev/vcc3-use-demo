@@ -1,0 +1,190 @@
+import { App } from 'vue';
+import type { DialogAction, DialogOptions } from './types';
+declare function Dialog(options: DialogOptions): Promise<unknown>;
+declare namespace Dialog {
+    var defaultOptions: {
+        title: string;
+        width: string;
+        theme: null;
+        message: string;
+        overlay: boolean;
+        callback: null;
+        teleport: string;
+        className: string;
+        allowHtml: boolean;
+        lockScroll: boolean;
+        transition: undefined;
+        beforeClose: null;
+        overlayClass: string;
+        overlayStyle: undefined;
+        messageAlign: string;
+        cancelButtonText: string;
+        cancelButtonColor: null;
+        confirmButtonText: string;
+        confirmButtonColor: null;
+        showConfirmButton: boolean;
+        showCancelButton: boolean;
+        closeOnPopstate: boolean;
+        closeOnClickOverlay: boolean;
+    };
+    var currentOptions: {
+        title: string;
+        width: string;
+        theme: null;
+        message: string;
+        overlay: boolean;
+        callback: null;
+        teleport: string;
+        className: string;
+        allowHtml: boolean;
+        lockScroll: boolean;
+        transition: undefined;
+        beforeClose: null;
+        overlayClass: string;
+        overlayStyle: undefined;
+        messageAlign: string;
+        cancelButtonText: string;
+        cancelButtonColor: null;
+        confirmButtonText: string;
+        confirmButtonColor: null;
+        showConfirmButton: boolean;
+        showCancelButton: boolean;
+        closeOnPopstate: boolean;
+        closeOnClickOverlay: boolean;
+    };
+    var alert: typeof Dialog;
+    var confirm: (options: DialogOptions) => Promise<unknown>;
+    var close: () => void;
+    var setDefaultOptions: (options: DialogOptions) => void;
+    var resetDefaultOptions: () => void;
+    var Component: import("../utils").WithInstall<import("vue").DefineComponent<{
+        show: BooleanConstructor;
+        zIndex: (NumberConstructor | StringConstructor)[];
+        overlay: {
+            type: BooleanConstructor;
+            default: true;
+        };
+        duration: (NumberConstructor | StringConstructor)[];
+        teleport: import("vue").PropType<string | import("vue").RendererElement | null | undefined>;
+        lockScroll: {
+            type: BooleanConstructor;
+            default: true;
+        };
+        lazyRender: {
+            type: BooleanConstructor;
+            default: true;
+        };
+        beforeClose: import("vue").PropType<import("../utils").Interceptor>;
+        overlayStyle: import("vue").PropType<import("vue").CSSProperties>;
+        overlayClass: import("vue").PropType<unknown>;
+        transitionAppear: BooleanConstructor;
+        closeOnClickOverlay: {
+            type: BooleanConstructor;
+            default: true;
+        };
+    } & {
+        title: StringConstructor;
+        theme: import("vue").PropType<import("./types").DialogTheme>;
+        width: (NumberConstructor | StringConstructor)[];
+        message: import("vue").PropType<import("./types").DialogMessage>;
+        callback: import("vue").PropType<(action?: DialogAction | undefined) => void>;
+        allowHtml: BooleanConstructor;
+        className: import("vue").PropType<unknown>;
+        transition: {
+            type: import("vue").PropType<string>;
+            default: string;
+        };
+        messageAlign: import("vue").PropType<import("./types").DialogMessageAlign>;
+        closeOnPopstate: {
+            type: BooleanConstructor;
+            default: true;
+        };
+        showCancelButton: BooleanConstructor;
+        cancelButtonText: StringConstructor;
+        cancelButtonColor: StringConstructor;
+        confirmButtonText: StringConstructor;
+        confirmButtonColor: StringConstructor;
+        showConfirmButton: {
+            type: BooleanConstructor;
+            default: true;
+        };
+        closeOnClickOverlay: BooleanConstructor;
+    }, () => JSX.Element, unknown, {}, {}, import("vue").ComponentOptionsMixin, import("vue").ComponentOptionsMixin, ("update:show" | "cancel" | "confirm")[], "update:show" | "cancel" | "confirm", import("vue").VNodeProps & import("vue").AllowedComponentProps & import("@vue/runtime-core").ComponentCustomProps, Readonly<{
+        show?: unknown;
+        zIndex?: unknown;
+        overlay?: unknown;
+        duration?: unknown;
+        teleport?: unknown;
+        lockScroll?: unknown;
+        lazyRender?: unknown;
+        beforeClose?: unknown;
+        overlayStyle?: unknown;
+        overlayClass?: unknown;
+        transitionAppear?: unknown;
+        closeOnClickOverlay?: unknown;
+        title?: unknown;
+        theme?: unknown;
+        width?: unknown;
+        message?: unknown;
+        callback?: unknown;
+        allowHtml?: unknown;
+        className?: unknown;
+        transition?: unknown;
+        messageAlign?: unknown;
+        closeOnPopstate?: unknown;
+        showCancelButton?: unknown;
+        cancelButtonText?: unknown;
+        cancelButtonColor?: unknown;
+        confirmButtonText?: unknown;
+        confirmButtonColor?: unknown;
+        showConfirmButton?: unknown;
+    } & {
+        overlay: boolean;
+        show: boolean;
+        lockScroll: boolean;
+        lazyRender: boolean;
+        transitionAppear: boolean;
+        closeOnClickOverlay: boolean;
+        transition: string;
+        closeOnPopstate: boolean;
+        allowHtml: boolean;
+        showCancelButton: boolean;
+        showConfirmButton: boolean;
+    } & {
+        width?: string | number | undefined;
+        message?: import("./types").DialogMessage | undefined;
+        title?: string | undefined;
+        zIndex?: string | number | undefined;
+        duration?: string | number | undefined;
+        teleport?: string | import("vue").RendererElement | null | undefined;
+        beforeClose?: import("../utils").Interceptor | undefined;
+        overlayStyle?: import("vue").CSSProperties | undefined;
+        overlayClass?: unknown;
+        className?: unknown;
+        callback?: ((action?: DialogAction | undefined) => void) | undefined;
+        cancelButtonText?: string | undefined;
+        confirmButtonText?: string | undefined;
+        theme?: import("./types").DialogTheme | undefined;
+        messageAlign?: import("./types").DialogMessageAlign | undefined;
+        cancelButtonColor?: string | undefined;
+        confirmButtonColor?: string | undefined;
+    }> & {
+        "onUpdate:show"?: ((...args: any[]) => any) | undefined;
+        onCancel?: ((...args: any[]) => any) | undefined;
+        onConfirm?: ((...args: any[]) => any) | undefined;
+    }, {
+        overlay: boolean;
+        show: boolean;
+        lockScroll: boolean;
+        lazyRender: boolean;
+        transitionAppear: boolean;
+        closeOnClickOverlay: boolean;
+        transition: string;
+        closeOnPopstate: boolean;
+        allowHtml: boolean;
+        showCancelButton: boolean;
+        showConfirmButton: boolean;
+    }>>;
+    var install: (app: App<any>) => void;
+}
+export { Dialog };
