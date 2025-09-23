@@ -2,7 +2,7 @@
 
 Demonstrate how to use VCC3
 
-VCC3: [https://vcc3.sahadev.tech/](https://vcc3.sahadev.tech/)
+VCC3: [https://vcc3.surge.sh/](https://vcc3.surge.sh/)
 
 Just clone & install & npm run dev, That's ok.
 
